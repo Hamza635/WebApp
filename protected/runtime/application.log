@@ -1,0 +1,56 @@
+2020/08/10 12:00:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=gii
+---
+2020/08/10 12:01:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=gii
+---
+2020/08/10 12:02:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=gii
+---
+2020/08/10 12:21:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "user". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=user
+---
+2020/08/10 12:27:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=gii
+---
+2020/08/10 12:37:51 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=gii
+---
+2020/08/10 12:53:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "gii". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=gii
+---
