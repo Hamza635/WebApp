@@ -39,4 +39,5 @@ class ContactForm extends CFormModel
 			'verifyCode'=>'Verification Code',
 		);
 	}
+
 }
