@@ -1,4 +1,8 @@
-<?php /* @var $this Controller */ ?>
+<?php /* @var $this Controller */
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -57,7 +61,7 @@
 		Powered By Hamza <br/>
 	</div><!-- footer -->
 
-</div><!-- page -->
+<!-- page -->
 
 </body>
 </html>

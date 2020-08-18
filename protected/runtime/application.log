@@ -2377,3 +2377,1088 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/webapp/index.php?r=Country/create
 ---
+2020/08/17 06:27:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "user\". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('user\\')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=user\
+---
+2020/08/17 06:29:57 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "country". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('country')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('site/country')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=site/country
+HTTP_REFERER=http://localhost/webapp/index.php?r=site/index
+---
+2020/08/17 06:30:45 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "country". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('country')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('site/country')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=site/country
+---
+2020/08/17 06:30:48 [error] [php] Use of undefined constant Create - assumed 'Create' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:6)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country
+in C:\wamp64\www\webapp\protected\views\country\index.php (6)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 06:30:59 [error] [php] Use of undefined constant Create - assumed 'Create' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:6)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (6)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 06:31:04 [error] [php] Use of undefined constant Create - assumed 'Create' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:6)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country
+in C:\wamp64\www\webapp\protected\views\country\index.php (6)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 06:48:12 [error] [php] Undefined variable: dataProvider (C:\wamp64\www\webapp\protected\views\country\index.php:59)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (59)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 06:55:44 [error] [exception.ParseError] ParseError: syntax error, unexpected 'echo' (T_ECHO), expecting ')' in C:\wamp64\www\webapp\protected\views\country\index.php:9
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#3 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 07:36:52 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:37:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:38:01 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view.php". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view.php')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view.php')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view.p...')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view.php
+---
+2020/08/17 07:38:41 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view.php". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view.php')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view.php')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view.p...')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view.php
+---
+2020/08/17 07:38:45 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:39:16 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+---
+2020/08/17 07:39:22 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:43:06 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+---
+2020/08/17 07:43:11 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:44:12 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\webapp\protected\controllers\CountryController.php:29
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(276): CWebApplication->createController('_view/')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+---
+2020/08/17 07:44:14 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\webapp\protected\controllers\CountryController.php:29
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 07:44:14 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\webapp\protected\controllers\CountryController.php:29
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/webapp/index.php?r=country
+HTTP_REFERER=http://localhost/webapp/index.php?r=user/index
+---
+2020/08/17 07:44:17 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\webapp\protected\controllers\CountryController.php:29
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/webapp/index.php?r=country
+HTTP_REFERER=http://localhost/webapp/index.php?r=user/create
+---
+2020/08/17 07:44:38 [error] [exception.ParseError] ParseError: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) in C:\wamp64\www\webapp\protected\controllers\CountryController.php:29
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 07:46:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/17 07:47:53 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/17 07:48:30 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "_view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('_view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('_view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/_view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/_view
+---
+2020/08/17 07:49:58 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:50:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/17 07:54:23 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 07:54:59 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/17 07:57:07 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/17 07:57:35 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/17 07:57:53 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/17 08:00:44 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/17 08:00:53 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "view". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:486
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/17 08:06:46 [error] [php] Undefined variable: dataProvider (C:\wamp64\www\webapp\protected\views\country\view.php:12)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CListView.php(291): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CListView->run()
+#6 C:\wamp64\www\webapp\protected\views\country\view.php(13): CountryController->widget()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CountryController->renderInternal()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#11 C:\wamp64\www\webapp\protected\controllers\CountryController.php(21): CountryController->render()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country/view
+in C:\wamp64\www\webapp\protected\views\country\view.php (12)
+in C:\wamp64\www\webapp\protected\views\country\view.php (13)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (21)
+2020/08/17 08:08:19 [error] [php] Undefined variable: dataProvider (C:\wamp64\www\webapp\protected\views\country\view.php:12)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CListView.php(291): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CListView->renderItems()
+#2 unknown(0): CListView->renderSection()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CListView->renderContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CListView->run()
+#6 C:\wamp64\www\webapp\protected\views\country\view.php(13): CountryController->widget()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CountryController->renderInternal()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#11 C:\wamp64\www\webapp\protected\controllers\CountryController.php(21): CountryController->render()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#19 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country/view
+in C:\wamp64\www\webapp\protected\views\country\view.php (12)
+in C:\wamp64\www\webapp\protected\views\country\view.php (13)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (21)
+2020/08/17 09:57:52 [error] [php] Use of undefined constant var_du - assumed 'var_du' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:24)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country
+in C:\wamp64\www\webapp\protected\views\country\index.php (24)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 09:59:12 [error] [php] Undefined variable: php_errormsg (C:\wamp64\www\webapp\protected\views\country\index.php:24)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (24)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 09:59:48 [error] [php] Use of undefined constant errorMessage - assumed 'errorMessage' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:24)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (24)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 09:59:57 [error] [php] Undefined variable: errorMessage (C:\wamp64\www\webapp\protected\views\country\index.php:24)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (24)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 10:15:45 [error] [exception.CException] CException: Property "CActiveForm.errorMessage" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp64\www\webapp\protected\views\country\index.php(24): CComponent->__get('errorMessage')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#5 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 10:26:25 [error] [exception.CException] CException: Property "CActiveForm.validateOnSubmit" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWidgetFactory.php(161): CComponent->__set('validateOnSubmi...', true)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CountryController), 'CActiveForm', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(198): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\wamp64\www\webapp\protected\views\country\index.php(14): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#8 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 10:27:18 [error] [exception.CException] CException: Property "CActiveForm.validateOnSubmit" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWidgetFactory.php(161): CComponent->__set('validateOnSubmi...', true)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CountryController), 'CActiveForm', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(198): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\wamp64\www\webapp\protected\views\country\index.php(14): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#8 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 10:27:21 [error] [exception.CException] CException: Property "CActiveForm.validateOnSubmit" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWidgetFactory.php(161): CComponent->__set('validateOnSubmi...', true)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CountryController), 'CActiveForm', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(198): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\wamp64\www\webapp\protected\views\country\index.php(14): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#8 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/webapp/index.php?r=country
+HTTP_REFERER=http://localhost/webapp/index.php?r=site/index
+---
+2020/08/17 10:27:27 [error] [exception.CException] CException: Property "CActiveForm.validateOnSubmit" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWidgetFactory.php(161): CComponent->__set('validateOnSubmi...', true)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CountryController), 'CActiveForm', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(198): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\wamp64\www\webapp\protected\views\country\index.php(14): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#8 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/webapp/index.php?r=country
+HTTP_REFERER=http://localhost/webapp/index.php
+---
+2020/08/17 10:43:49 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\wamp64\www\webapp\protected\controllers\CountryController.php:18
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(276): CWebApplication->createController('')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#3 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 10:48:16 [error] [exception.CException] CException: Property "Country.validate" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(145): CComponent->__get('validate')
+#1 C:\wamp64\www\webapp\protected\controllers\CountryController.php(13): CActiveRecord->__get('validate')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 10:48:57 [error] [exception.CException] CException: Property "Country.validate" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(145): CComponent->__get('validate')
+#1 C:\wamp64\www\webapp\protected\controllers\CountryController.php(13): CActiveRecord->__get('validate')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 10:49:22 [error] [exception.CException] CException: Property "Country.validate" is not defined. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(145): CComponent->__get('validate')
+#1 C:\wamp64\www\webapp\protected\controllers\CountryController.php(13): CActiveRecord->__get('validate')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/17 11:12:13 [error] [php] Undefined variable: form (C:\wamp64\www\webapp\protected\controllers\CountryController.php:13)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (13)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 11:22:23 [error] [exception.ParseError] ParseError: syntax error, unexpected ')', expecting end of file in C:\wamp64\www\webapp\protected\views\country\index.php:30
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#3 C:\wamp64\www\webapp\protected\controllers\CountryController.php(7): CController->render('index')
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/17 12:23:39 [error] [php] include(sting.php): failed to open stream: No such file or directory (C:\wamp64\www\yii-1.1.22.bf1d26\framework\YiiBase.php:463)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\YiiBase.php(310): class_exists()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\validators\CValidator.php(174): import()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CModel.php(287): createValidator()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CModel.php(260): Country->createValidators()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CModel.php(304): Country->getValidators()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1520): Country->isAttributeRequired()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\widgets\CActiveForm.php(600): activeLabelEx()
+#8 C:\wamp64\www\webapp\protected\views\country\index.php(26): CActiveForm->labelEx()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CountryController->renderInternal()
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#13 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#18 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country
+in C:\wamp64\www\webapp\protected\views\country\index.php (26)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 12:23:50 [error] [php] include(string.php): failed to open stream: No such file or directory (C:\wamp64\www\yii-1.1.22.bf1d26\framework\YiiBase.php:463)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\YiiBase.php(310): class_exists()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\validators\CValidator.php(174): import()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CModel.php(287): createValidator()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CModel.php(260): Country->createValidators()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CModel.php(304): Country->getValidators()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1520): Country->isAttributeRequired()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\widgets\CActiveForm.php(600): activeLabelEx()
+#8 C:\wamp64\www\webapp\protected\views\country\index.php(26): CActiveForm->labelEx()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CountryController->renderInternal()
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#13 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#18 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (26)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 12:48:40 [error] [php] Undefined variable: url (C:\wamp64\www\webapp\protected\views\country\index.php:66)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (66)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/17 13:00:17 [error] [exception.ArgumentCountError] ArgumentCountError: Too few arguments to function CActiveForm::error(), 0 passed in C:\wamp64\www\webapp\protected\views\country\index.php on line 28 and at least 2 expected in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\widgets\CActiveForm.php:444
+Stack trace:
+#0 C:\wamp64\www\webapp\protected\views\country\index.php(28): CActiveForm->error()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#5 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CController->render('index')
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/18 05:50:24 [error] [exception.Error] Error: Call to undefined function errorSummary() in C:\wamp64\www\webapp\protected\views\user\_form.php:20
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#3 C:\wamp64\www\webapp\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#8 C:\wamp64\www\webapp\protected\controllers\UserController.php(79): CController->render('create', Array)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/webapp/index.php?r=user/create
+HTTP_REFERER=http://localhost/webapp/index.php?r=site/login
+---
+2020/08/18 05:50:35 [error] [exception.Error] Error: Call to undefined function errorSummary() in C:\wamp64\www\webapp\protected\views\user\_form.php:20
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#3 C:\wamp64\www\webapp\protected\views\user\create.php(18): CController->renderPartial('_form', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#8 C:\wamp64\www\webapp\protected\controllers\UserController.php(79): CController->render('create', Array)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): UserController->actionCreate()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('create')
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('user/create')
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/webapp/index.php?r=user/create
+---
+2020/08/18 06:21:08 [error] [php] Declaration of Country::beforeSave($insert) should be compatible with CActiveRecord::beforeSave() (C:\wamp64\www\webapp\protected\models\Country.php:11)
+Stack trace:
+#0 C:\wamp64\www\webapp\protected\controllers\CountryController.php(7): spl_autoload_call()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\models\Country.php (11)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (7)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 06:38:21 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\index.php:21)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (21)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 08:13:12 [error] [php] Use of undefined constant Country - assumed 'Country' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:10)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (10)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (9)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 09:09:51 [error] [php] Use of undefined constant model - assumed 'model' (this will throw an Error in a future version of PHP) (C:\wamp64\www\webapp\protected\views\country\index.php:26)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country
+in C:\wamp64\www\webapp\protected\views\country\index.php (26)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (9)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 09:17:18 [error] [exception.Error] Error: Call to a member function getErrors() on string in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php:2218
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\widgets\CActiveForm.php(550): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 C:\wamp64\www\webapp\protected\views\country\index.php(24): CActiveForm->errorSummary('model')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#6 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CController->render('index')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/18 09:17:55 [error] [exception.Error] Error: Call to a member function isAttributeRequired() on string in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php:1520
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\widgets\CActiveForm.php(600): CHtml::activeLabelEx('model', 'countryname', Array)
+#1 C:\wamp64\www\webapp\protected\views\country\index.php(30): CActiveForm->labelEx('model', 'countryname')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#6 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CController->render('index')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/18 09:19:31 [error] [exception.Error] Error: Call to a member function getErrors() on string in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php:2218
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\widgets\CActiveForm.php(550): CHtml::errorSummary(Array, NULL, NULL, Array)
+#1 C:\wamp64\www\webapp\protected\views\country\index.php(24): CActiveForm->errorSummary('model')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', NULL, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', NULL, true)
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#6 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CController->render('index')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---
+2020/08/18 09:27:10 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\index.php:10)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (10)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (9)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 09:57:43 [error] [php] include(Html.php): failed to open stream: No such file or directory (C:\wamp64\www\yii-1.1.22.bf1d26\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\wamp64\www\webapp\protected\views\country\index.php(24): spl_autoload_call()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CountryController->renderInternal()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#5 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CountryController->render()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (24)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (9)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 10:26:25 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\controllers\CountryController.php:8)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 10:29:54 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\index.php:21)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(8): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (21)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (8)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 10:30:53 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\index.php:21)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (21)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (9)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 10:31:13 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\index.php:21)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(9): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=Country
+in C:\wamp64\www\webapp\protected\views\country\index.php (21)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (9)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/18 12:33:20 [error] [exception.CException] CException: CountryController cannot find the requested view "create". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php:881
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#1 C:\wamp64\www\webapp\protected\controllers\CountryController.php(20): CController->render('create', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---

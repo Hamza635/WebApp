@@ -27,7 +27,7 @@ class Country extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('countryname, cityname, population', 'required'),
-			array('countryname, cityname, population', 'numerical', 'integerOnly'=>true),
+			array('population','numerical','integerOnly'=>true,'min'=>0),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('countryname, cityname, population', 'safe', 'on'=>'search'),
@@ -94,4 +94,5 @@ class Country extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
 }

@@ -5,6 +5,7 @@
 		<?php echo $content; ?>
 	</div><!-- content -->
 </div>
+
 <div class="span-5 last">
 	<div id="sidebar">
 	<?php
