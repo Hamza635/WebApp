@@ -3462,3 +3462,16 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/webapp/index.php?r=Country
 ---
+2020/08/18 18:35:50 [error] [exception.Error] Error: Access to undeclared static property: Yii::$app in C:\wamp64\www\webapp\protected\controllers\CountryController.php:9
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('Country')
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#7 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/webapp/index.php?r=Country
+---

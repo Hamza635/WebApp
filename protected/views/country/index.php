@@ -16,16 +16,14 @@ $this->menu = array(array('label' => 'View Countries', 'url' => array('view')),
 // controller action is handling ajax validation correctly.
 // See class documentation of CActiveForm for details on this,
 // you need to use the performAjaxValidation()-method described there.
-        'enableAjaxValidation'=>FALSE,
+        'enableAjaxValidation'=>true,
+
        ));
     ?>
     <p class="note">Fields with <span class="required">*</span> are required.
     </p>
 
-    <?php echo $form->errorSummary($model);
 
-
-    ?>
     <div class="row">
         <?php echo $form->labelEx($model, 'countryname'); ?>
         <?php echo $form->textField($model, 'countryname'); ?>

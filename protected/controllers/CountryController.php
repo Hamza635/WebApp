@@ -6,6 +6,11 @@ class CountryController extends Controller
     public function actionIndex()
     {
         $model = new Country;
+        if(isset($_POST['ajax']) && $_POST['ajax']==='country-Country-form')
+        {
+            echo CActiveForm::validate($model);
+            Yii::app()->end();
+        }
         if (isset($_POST['Country'])) {
                $model->attributes = $_POST['Country'];
                if ($model->save())
