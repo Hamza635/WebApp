@@ -11,14 +11,13 @@ $this->menu = array(array('label' => 'View Countries', 'url' => array('view')),
 */?>
 
 <div class="form">
-    <?php $form = $this->beginWidget('CActiveForm', array('id' => 'country-Country-form',
-// Please note: When you enable ajax validation, make sure the corresponding
-// controller action is handling ajax validation correctly.
-// See class documentation of CActiveForm for details on this,
-// you need to use the performAjaxValidation()-method described there.
-        'enableAjaxValidation'=>true,
-
-       ));
+    <?php $form = $this->beginWidget('CActiveForm', array(
+        'id' => 'country_form',
+        'enableClientValidation'=>true,
+        'clientOptions'=>array(
+            'validateOnSubmit'=>true,
+        ),
+    ));
     ?>
     <p class="note">Fields with <span class="required">*</span> are required.
     </p>
@@ -41,7 +40,12 @@ $this->menu = array(array('label' => 'View Countries', 'url' => array('view')),
         <?php echo $form->error($model, 'population'); ?>
     </div>
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php echo CHtml::submitButton('Submit');
+
+        /*<?php echo CHtml::ajaxSubmitButton( 'Send',
+            CHtml::normalizeUrl(array('Country/Index'))
+             );
+        */?>
     </div>
 
 <?php $this->endWidget(); ?>
