@@ -30,7 +30,7 @@ class Country extends CActiveRecord
 			array('population','numerical','integerOnly'=>true,'min'=>0),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('countryname, cityname, population', 'safe', 'on'=>'search'),
+			array('id, countryname, cityname, population', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,7 +51,8 @@ class Country extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'countryname' => 'Countryname',
+            'id' => 'ID',
+            'countryname' => 'Countryname',
 			'cityname' => 'Cityname',
 			'population' => 'Population',
 		);
@@ -74,8 +75,8 @@ class Country extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
-		$criteria->compare('countryname',$this->countryname);
+        $criteria->compare('id',$this->id);
+        $criteria->compare('countryname',$this->countryname);
 		$criteria->compare('cityname',$this->cityname);
 		$criteria->compare('population',$this->population);
 
