@@ -18,9 +18,15 @@ class CountryController extends Controller
 }
    public function actionview()
      {
-          $dataProvider=new CActiveDataProvider('Country');
+          $model=new Country('search');
+         $model->unsetAttributes();  // clear any default values
+         if(isset($_GET['Country']))
+             $model->attributes=$_GET['Country'];
+
          $this->render('view',array(
-             'dataProvider'=>$dataProvider,
+             'model'=>$model,
+
+
          ));
      }
 

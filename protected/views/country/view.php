@@ -3,9 +3,13 @@
 
 
     <?php
+
     $dataProvider=new CActiveDataProvider('Country');
     $this->widget('zii.widgets.grid.CGridView', array(
-        'dataProvider'=>$dataProvider,
+        'dataProvider'=>$model->search(),
+        'filter'=>$model,
+
+
 
     ));
 

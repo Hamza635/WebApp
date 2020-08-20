@@ -6,9 +6,7 @@ $this->menu = array(array('label' => 'View Countries', 'url' => array('view')),
 ?>
 <h1>Create Country</h1>
 
-<?php
-/*$model = new Country;
-*/?>
+
 
 <div class="form">
     <?php $form = $this->beginWidget('CActiveForm', array(
@@ -19,6 +17,7 @@ $this->menu = array(array('label' => 'View Countries', 'url' => array('view')),
         ),
     ));
     ?>
+
     <p class="note">Fields with <span class="required">*</span> are required.
     </p>
 

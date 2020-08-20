@@ -3665,3 +3665,476 @@ Stack trace:
 #14 {main}
 REQUEST_URI=/webapp/index.php?r=country/view
 ---
+2020/08/20 05:47:39 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\view.php:8)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country/view
+in C:\wamp64\www\webapp\protected\views\country\view.php (8)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (23)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/20 05:50:43 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "search". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\webapp\protected\views\country\view.php(8): CComponent->__call('search', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#5 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 05:52:06 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "search". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\webapp\protected\views\country\view.php(23): CComponent->__call('search', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#5 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/20 06:02:47 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getValidators". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(2467): CComponent->__call('getValidators', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(CActiveDataProvider), 'countryname', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(CActiveDataProvider), 'countryname', Array)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(539): CGridColumn->renderFilterCell()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderFilter()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(487): CGridView->renderTableHeader()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CBaseListView->run()
+#13 C:\wamp64\www\webapp\protected\views\country\view.php(9): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#18 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#25 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:05:26 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\view.php:14)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country/view
+in C:\wamp64\www\webapp\protected\views\country\view.php (14)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (23)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/20 06:10:11 [error] [php] Undefined variable: model (C:\wamp64\www\webapp\protected\views\country\view.php:13)
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CountryController->renderFile()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CountryController->renderPartial()
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CountryController->render()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CountryController->runAction()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CountryController->runActionWithFilters()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CountryController->run()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/webapp/index.php?r=country/view
+in C:\wamp64\www\webapp\protected\views\country\view.php (13)
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (23)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/20 06:10:55 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getValidators". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(2467): CComponent->__call('getValidators', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(CActiveDataProvider), 'countryname', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(CActiveDataProvider), 'countryname', Array)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(539): CGridColumn->renderFilterCell()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderFilter()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(487): CGridView->renderTableHeader()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CBaseListView->run()
+#13 C:\wamp64\www\webapp\protected\views\country\view.php(12): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#18 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#25 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:12:25 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getValidators". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(2467): CComponent->__call('getValidators', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(CActiveDataProvider), 'countryname', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(CActiveDataProvider), 'countryname', Array)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(539): CGridColumn->renderFilterCell()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderFilter()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(487): CGridView->renderTableHeader()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CBaseListView->run()
+#13 C:\wamp64\www\webapp\protected\views\country\view.php(9): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#18 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#25 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:17:29 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getValidators". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(2467): CComponent->__call('getValidators', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(CActiveDataProvider), 'countryname', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(CActiveDataProvider), 'countryname', Array)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(539): CGridColumn->renderFilterCell()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderFilter()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(487): CGridView->renderTableHeader()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CBaseListView->run()
+#13 C:\wamp64\www\webapp\protected\views\country\view.php(9): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#18 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#25 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:18:55 [error] [exception.CException] CException: CActiveDataProvider and its behaviors do not have a method or closure named "getValidators". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(2467): CComponent->__call('getValidators', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(CActiveDataProvider), 'countryname', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CDataColumn.php(104): CHtml::activeTextField(Object(CActiveDataProvider), 'countryname', Array)
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(539): CGridColumn->renderFilterCell()
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(517): CGridView->renderFilter()
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(487): CGridView->renderTableHeader()
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(182): CBaseListView->run()
+#13 C:\wamp64\www\webapp\protected\views\country\view.php(9): CBaseController->widget('zii.widgets.gri...', Array)
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#18 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#19 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#20 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#22 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#24 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#25 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#26 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/20 06:24:01 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(10): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(23): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/20 06:26:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "index". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('index')
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/webapp/index.php?r=index
+---
+2020/08/20 06:32:42 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(8): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(25): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:33:53 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(8): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(25): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:33:58 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(8): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(25): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/20 06:34:39 [error] [exception.CException] CException: The "dataProvider" property cannot be empty. in C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php:123
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\wamp64\www\webapp\protected\views\country\view.php(12): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#8 C:\wamp64\www\webapp\protected\controllers\CountryController.php(25): CController->render('view', Array)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#10 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=Country
+---
+2020/08/20 06:35:18 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(9): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(25): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:37:38 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(9): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(25): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+---
+2020/08/20 06:44:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'population' at row 1. The SQL statement executed was: INSERT INTO `tbl_country` (`countryname`, `cityname`, `population`) VALUES (:yp0, :yp1, :yp2).
+in C:\wamp64\www\webapp\protected\controllers\CountryController.php (12)
+in C:\wamp64\www\webapp\index.php (13)
+2020/08/20 06:44:35 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'population' at row 1. The SQL statement executed was: INSERT INTO `tbl_country` (`countryname`, `cityname`, `population`) VALUES (:yp0, :yp1, :yp2) in C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(1083): CDbCommand->execute()
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(811): CActiveRecord->insert(NULL)
+#2 C:\wamp64\www\webapp\protected\controllers\CountryController.php(12): CActiveRecord->save()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionIndex()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country')
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/webapp/index.php?r=country
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
+2020/08/20 06:53:10 [error] [exception.CException] CException: Country and its behaviors do not have a method or closure named "getData". in C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp64\www\yii-1.1.22.bf1d26\framework\db\ar\CActiveRecord.php(229): CComponent->__call('getData', Array)
+#1 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\CBaseListView.php(125): CActiveRecord->__call('getData', Array)
+#2 C:\wamp64\www\yii-1.1.22.bf1d26\framework\zii\widgets\grid\CGridView.php(339): CBaseListView->init()
+#3 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp64\www\webapp\protected\views\country\view.php(10): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(126): require('C:\\wamp64\\www\\w...')
+#7 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\wamp64\\www\\w...', Array, true)
+#8 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(872): CBaseController->renderFile('C:\\wamp64\\www\\w...', Array, true)
+#9 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#10 C:\wamp64\www\webapp\protected\controllers\CountryController.php(34): CController->render('view', Array)
+#11 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\actions\CInlineAction.php(49): CountryController->actionview()
+#12 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(282): CController->run('view')
+#16 C:\wamp64\www\yii-1.1.22.bf1d26\framework\web\CWebApplication.php(141): CWebApplication->runController('country/view')
+#17 C:\wamp64\www\yii-1.1.22.bf1d26\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\wamp64\www\webapp\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/webapp/index.php?r=country/view
+HTTP_REFERER=http://localhost/webapp/index.php?r=country
+---
