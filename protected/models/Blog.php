@@ -1,22 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "tbl_user".
+ * This is the model class for table "tbl_blogs".
  *
- * The followings are the available columns in table 'tbl_user':
+ * The followings are the available columns in table 'tbl_blogs':
  * @property integer $id
- * @property string $username
- * @property string $password
- * @property string $email
+ * @property integer $user_id
+ * @property string $title
+ * @property string $slug
+ * @property integer $views
+ * @property string $image
+ * @property string $body
+ * @property integer $published
+ * @property string $created_at
  */
-class User extends CActiveRecord
+class Blog extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'tbl_user';
+		return 'tbl_blogs';
 	}
 
 	/**
@@ -27,11 +32,13 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, email', 'required'),
-			array('username, password, email', 'length', 'max'=>128),
-			// The following rule is used by search().
+			array('title, slug,  body, published, created_at', 'required'),
+			array('user_id, views, published', 'numerical', 'integerOnly'=>true),
+			array('title, slug, ', 'length', 'max'=>255),
+            array('image', 'file', 'types' => 'jpg,jpeg,png,gif', 'allowEmpty' => True),
+           // The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, username, password, email', 'safe', 'on'=>'search'),
+			array('id, user_id, title, slug, views, image, body, published, created_at', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,20 +60,16 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Username',
-			'password' => 'Password',
-			'email' => 'Email',
+			'user_id' => 'User',
+			'title' => 'Title',
+			'slug' => 'Slug',
+			'views' => 'Views',
+			'image' => 'Image',
+			'body' => 'Body',
+			'published' => 'Published',
+			'created_at' => 'Created At',
 		);
 	}
-    public function validatePassword($password)
-    {
-        return CPasswordHelper::verifyPassword($password,$this->password);
-    }
-
-    public function hashPassword($password)
-    {
-        return CPasswordHelper::hashPassword($password);
-    }
 
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
@@ -87,9 +90,14 @@ class User extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('username',$this->username,true);
-		$criteria->compare('password',$this->password,true);
-		$criteria->compare('email',$this->email,true);
+		$criteria->compare('user_id',$this->user_id);
+		$criteria->compare('title',$this->title,true);
+		$criteria->compare('slug',$this->slug,true);
+		$criteria->compare('views',$this->views);
+		$criteria->compare('image',$this->image,true);
+		$criteria->compare('body',$this->body,true);
+		$criteria->compare('published',$this->published);
+		$criteria->compare('created_at',$this->created_at,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -100,7 +108,7 @@ class User extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return User the static model class
+	 * @return Blog the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

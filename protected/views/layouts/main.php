@@ -39,7 +39,10 @@
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
                 array('label'=>'Hello', 'url'=>array('/site/page', 'view'=>'hello')),
-                 array('label'=>'country', 'url'=>array('/country',))
+                array('label'=>'country', 'url'=>array('/country',)),
+                array('label'=>'Blogs', 'url'=>array('/blog/Create',)),
+                array('label'=>'View Blogs','url'=>array('/blog/blogs')),
+
 
 
 			),
